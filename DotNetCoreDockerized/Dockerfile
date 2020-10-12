@@ -8,7 +8,7 @@ COPY *.csproj ./
 RUN dotnet restore 
 
 COPY . .
-WORKDIR /src/DotNetCoreDockerized
+WORKDIR /src
 RUN dotnet build -c Release -o /app
 
 FROM build AS publish
