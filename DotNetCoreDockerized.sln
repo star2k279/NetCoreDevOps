@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreDockerized", "DotNetCoreDockerized\DotNetCoreDockerized.csproj", "{4A2E8688-0A63-4107-9B1E-41DD47D2C1CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreDockerized", "DotNetCoreDockerized\DotNetCoreDockerized.csproj", "{4A2E8688-0A63-4107-9B1E-41DD47D2C1CC}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{DCE9CFAC-22D6-4AAA-B444-065E5518251A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4A2E8688-0A63-4107-9B1E-41DD47D2C1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A2E8688-0A63-4107-9B1E-41DD47D2C1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A2E8688-0A63-4107-9B1E-41DD47D2C1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCE9CFAC-22D6-4AAA-B444-065E5518251A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCE9CFAC-22D6-4AAA-B444-065E5518251A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCE9CFAC-22D6-4AAA-B444-065E5518251A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCE9CFAC-22D6-4AAA-B444-065E5518251A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

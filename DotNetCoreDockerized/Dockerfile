@@ -4,14 +4,14 @@ EXPOSE 80
 
 FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /src
-COPY ["DotNetCoreDockerized/DotNetCoreDockerized.csproj", "DotNetCoreDockerized/"]
-RUN dotnet restore "DotNetCoreDockerized/DotNetCoreDockerized.csproj"
+COPY DotNetCoreDockerized/DotNetCoreDockerized.csproj DotNetCoreDockerized/
+RUN dotnet restore DotNetCoreDockerized/DotNetCoreDockerized.csproj
 COPY . .
-WORKDIR "/src/DotNetCoreDockerized"
-RUN dotnet build "DotNetCoreDockerized.csproj" -c Release -o /app
+WORKDIR /src/DotNetCoreDockerized
+RUN dotnet build DotNetCoreDockerized.csproj -c Release -o /app
 
 FROM build AS publish
-RUN dotnet publish "DotNetCoreDockerized.csproj" -c Release -o /app
+RUN dotnet publish DotNetCoreDockerized.csproj -c Release -o /app
 
 FROM base AS final
 WORKDIR /app
