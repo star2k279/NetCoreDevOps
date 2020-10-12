@@ -14,7 +14,7 @@ namespace DotNetCoreDockerized.Controllers
         [HttpGet("GetResponse")]
         public ActionResult<string> GetResponse()
         {
-            return new string("Hello from dockerized Asp.Net Core Application");
+            return new string("Hello from dockerized Asp.Net Core Application, edited");
         }
 
         // GET api/values/5
