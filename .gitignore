@@ -1,6 +1,12 @@
 .vs/
 .obj/
 .bin/
-/obj/Docker
-/DotNetCoreDockerized/obj/Docker
+
+
 /DotNetCoreDockerized/Dockerfile.original
+/bin/Debug
+/DotNetCoreDockerized/bin/Debug/netcoreapp2.2
+/DotNetCoreDockerized/obj/Debug/netcoreapp2.2
+/DotNetCoreDockerized/obj
+/obj/Debug
+/obj/Docker
