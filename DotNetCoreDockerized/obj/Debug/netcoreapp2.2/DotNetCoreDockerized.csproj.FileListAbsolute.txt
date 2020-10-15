@@ -1,0 +1,14 @@
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\bin\Debug\netcoreapp2.2\DotNetCoreDockerized.deps.json
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\bin\Debug\netcoreapp2.2\DotNetCoreDockerized.runtimeconfig.json
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\bin\Debug\netcoreapp2.2\DotNetCoreDockerized.runtimeconfig.dev.json
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\bin\Debug\netcoreapp2.2\DotNetCoreDockerized.dll
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\obj\Debug\netcoreapp2.2\DotNetCoreDockerized.csprojAssemblyReference.cache
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\obj\Debug\netcoreapp2.2\DotNetCoreDockerized.csproj.CoreCompileInputs.cache
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\obj\Debug\netcoreapp2.2\DotNetCoreDockerized.RazorAssemblyInfo.cache
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\obj\Debug\netcoreapp2.2\DotNetCoreDockerized.RazorAssemblyInfo.cs
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\obj\Debug\netcoreapp2.2\DotNetCoreDockerized.AssemblyInfoInputs.cache
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\obj\Debug\netcoreapp2.2\DotNetCoreDockerized.AssemblyInfo.cs
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\obj\Debug\netcoreapp2.2\DotNetCoreDockerized.RazorTargetAssemblyInfo.cache
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\bin\Debug\netcoreapp2.2\DotNetCoreDockerized.pdb
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\obj\Debug\netcoreapp2.2\DotNetCoreDockerized.dll
+D:\Projects\NetCoreDevOps\DotNetCoreDockerized\obj\Debug\netcoreapp2.2\DotNetCoreDockerized.pdb
