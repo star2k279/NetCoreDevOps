@@ -17,4 +17,5 @@ RUN dotnet publish -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
+
 ENTRYPOINT ["dotnet", "DotNetCoreDockerized.dll"]
