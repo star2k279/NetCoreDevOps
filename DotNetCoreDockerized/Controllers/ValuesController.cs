@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace DotNetCoreDockerized.Controllers
 {
@@ -10,11 +11,19 @@ namespace DotNetCoreDockerized.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private IConfiguration _config;
+
+        public ValuesController(IConfiguration iConfig)
+        {
+            _config = iConfig;
+        }
+
         // GET api/values
         [HttpGet("GetResponse")]
         public ActionResult<string> GetResponse()
         {
-            return new string("Hello from dockerized Asp.Net Core Application. Updated by Najm once again");
+            string dbConn = _config.GetValue<string>("Database:myEnvironment");
+            return new string(String.Format("Hello from {0} of Asp.Net Core Application. Updated by Najm once again", dbConn));
         }
 
         // GET api/values/5
