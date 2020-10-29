@@ -28,7 +28,7 @@ namespace DotNetCoreDockerized
             pubnub = new Pubnub(pnConfiguration);
             _config = iConfig;
             string dbConn = _config.GetValue<string>("Database:myEnvironment");
-            message.Add("msg", string.Format("Hello from {0} environment, Devops training using Docker Containers and Azure Oct 29", dbConn));
+            message.Add("msg", string.Format("Hello from {0} environment, Devops training using Docker Containers and Azure Testing.", dbConn));
         }
 
 
