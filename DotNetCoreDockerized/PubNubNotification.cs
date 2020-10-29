@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using PubnubApi;
 
 namespace DotNetCoreDockerized
@@ -13,9 +14,9 @@ namespace DotNetCoreDockerized
         Pubnub pubnub;
         Dictionary<string, string> message;
         public string UUID { get; set; }
+        private IConfiguration _config;
 
-
-        public PubNubNotifications()
+        public PubNubNotifications(IConfiguration iConfig)
         {
             pnConfiguration = new PNConfiguration();
             message = new Dictionary<string, string>();
@@ -25,7 +26,9 @@ namespace DotNetCoreDockerized
             pnConfiguration.Uuid = "devOpsAPI";
             pnConfiguration.Secure = true;
             pubnub = new Pubnub(pnConfiguration);
-            message.Add("msg", "Hello to Devops training using Docker Containers and Azure");
+            _config = iConfig;
+            string dbConn = _config.GetValue<string>("Database:myEnvironment");
+            message.Add("msg", string.Format("Hello from {0} environment, Devops training using Docker Containers and Azure", dbConn));
         }
 
 
