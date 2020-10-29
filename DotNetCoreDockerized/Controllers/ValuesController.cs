@@ -23,7 +23,7 @@ namespace DotNetCoreDockerized.Controllers
         public ActionResult<string> GetResponse()
         {
             string dbConn = _config.GetValue<string>("Database:myEnvironment");
-            return new string(String.Format("Hello from {0} of Asp.Net Core Application. Updated by Najm once again", dbConn));
+            return new string(String.Format("Hello from {0} of Asp.Net Core Application. Testing Oct 29", dbConn));
         }
 
         // GET api/values/5
